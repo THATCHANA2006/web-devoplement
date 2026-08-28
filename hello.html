@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <form>
+    <label>USERNAME:</label>
+    <input type="text" placeholder="Enter the username" pattern="[a-zA-Z]*" title="it must contain alphabets"><br><br><br>
+    <label>PASSWORD:</label>
+    <input type="password" placeholder="enter the password" 
+    pattern="(?=.*[a-zA-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+    title="it must contain one uppercase,one lowercase,one special symbol and atleast 8 characters"reqired><br><br><br>
+    <input type="submit"><br><br><br>
+    <a href="#">forgotpassword</a> 
+    </form>
+</body>
+</html>
