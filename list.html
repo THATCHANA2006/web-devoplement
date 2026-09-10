@@ -1,104 +1,55 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional List</title>
+    <title>My List</title>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
-            margin: 0;
-            padding: 40px;
+            font-family: Arial;
+            text-align: center;
+            background-color: lightblue;
         }
 
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        ul {
+            display: inline-block;
+            text-align: left;
+            border: 2px solid black;
+            padding: 20px 40px;
+            background-color: white;
         }
 
-        h2 {
-            margin-bottom: 20px;
-            color: #222;
-        }
-
-        .professional-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .professional-list li {
-            display: flex;
-            align-items: center;
-            padding: 15px;
-            margin-bottom: 10px;
-            background-color: #f8f9fa;
-            border-left: 4px solid #2563eb;
-            border-radius: 6px;
-            transition: 0.3s;
-        }
-
-        .professional-list li:hover {
-            background-color: #eef4ff;
-            transform: translateX(5px);
-        }
-
-        .number {
-            font-weight: bold;
-            color: #2563eb;
-            margin-right: 15px;
-            min-width: 25px;
-        }
-
-        .item {
-            color: #333;
-            font-size: 16px;
+        button {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
+    <h2>My List</h2>
 
-        <h2>Railway Maintenance Tasks</h2>
+    <ul id="myList">
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
 
-        <ul class="professional-list">
+    <br><br>
 
-            <li>
-                <span class="number">01</span>
-                <span class="item">Track Inspection</span>
-            </li>
+    <button onclick="addItem()">Click Me</button>
 
-            <li>
-                <span class="number">02</span>
-                <span class="item">Signal System Maintenance</span>
-            </li>
-
-            <li>
-                <span class="number">03</span>
-                <span class="item">Electrical Equipment Inspection</span>
-            </li>
-
-            <li>
-                <span class="number">04</span>
-                <span class="item">Railway Asset Monitoring</span>
-            </li>
-
-            <li>
-                <span class="number">05</span>
-                <span class="item">Maintenance Block Optimization</span>
-            </li>
-
-        </ul>
-
-    </div>
+    <script>
+        function addItem() {
+            let li = document.createElement("li");
+            li.innerHTML = "JavaScript";
+            document.getElementById("myList").appendChild(li);
+        }
+    </script>
 
 </body>
 </html>
+```

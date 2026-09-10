@@ -1,0 +1,42 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Color Change</title>
+
+    <style>
+        body {
+            text-align: center;
+            padding-top: 100px;
+            font-family: Arial;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Page Color Change</h1>
+
+    <button onclick="changeColor()">
+        Click Me
+    </button>
+
+    <script>
+        function changeColor() {
+            document.body.style.backgroundColor = "lightgreen";
+        }
+    </script>
+
+</body>
+</html>
+```
