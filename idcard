@@ -1,28 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> ID CARD</title>
-        <body style="background-color: rgb(7, 185, 244);">
-        <center>
-            <h1>V.S.B Engneering college,KARUR</h1>
-            <h4> IDENTIY CARD</h4>
-        </center>
+<head>
+    <title>ID CARD</title>
 
-            <center>
-        <img src="KAVIN.jpeg"
-     style="border:2px solid rgb(220, 3, 3); border-radius:20px;"
-     width="160"
-     height="190">
-        <background-size: cover;></background-size:>
-            <h2> NAME: KAVINKUMAR C</h2>
-            <h2> DEPT: ECE</h2>
-            <h2> BATCH: 2024-2028</h2>
-            <h2> AGE: 21</h2>
-            <h2> GENDER: MALE</h2>
-            <h2> MOBILE NO:6382409474</h2>
-            
-            </center>
-            </body>
+    <style>
+        body {
+            background-color: rgb(7, 185, 244);
+            font-family: Arial, sans-serif;
+        }
 
-    </head>
+        .id-card {
+            width: 400px;
+            margin: 50px auto;
+            padding: 25px;
+            text-align: center;
+            background-color: white;
+            border: 4px solid rgb(220, 3, 3);
+            border-radius: 20px;
+            box-shadow: 0px 5px 15px gray;
+        }
+
+        .id-card h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .id-card h4 {
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        .photo {
+            width: 160px;
+            height: 190px;
+            object-fit: cover;
+            border: 3px solid rgb(220, 3, 3);
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        .details {
+            text-align: left;
+            margin-left: 30px;
+        }
+
+        .details h3 {
+            margin: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="id-card">
+
+        <h1>V.S.B Engineering College, KARUR</h1>
+
+        <h4>IDENTITY CARD</h4>
+
+        <!-- Student Photo -->
+        <img src="KAVIN.jpeg" class="photo" alt="Kavin Photo">
+
+        <div class="details">
+            <h3>NAME : THATCHANAMOORTHY S </h3>
+            <h3>DEPT : ECE</h3>
+            <h3>BATCH : 2024-2028</h3>
+            <h3>GENDER : MALE</h3>
+            <h3>MOBILE NO : 6382409474</h3>
+        </div>
+
+    </div>
+
+</body>
 </html>

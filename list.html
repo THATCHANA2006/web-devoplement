@@ -1,55 +1,45 @@
-```html
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My List</title>
+    <title>Color Change List</title>
 
     <style>
         body {
             font-family: Arial;
             text-align: center;
-            background-color: lightblue;
+            padding-top: 100px;
         }
 
-        ul {
-            display: inline-block;
-            text-align: left;
+        select {
+            padding: 10px;
+            font-size: 18px;
             border: 2px solid black;
-            padding: 20px 40px;
-            background-color: white;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: green;
-            color: white;
-            border: none;
-            cursor: pointer;
+            border-radius: 5px;
         }
     </style>
 </head>
 
 <body>
 
-    <h2>My List</h2>
+    <h1>Choose a Color</h1>
 
-    <ul id="myList">
-        <li>HTML</li>
-        <li>CSS</li>
-    </ul>
-
-    <br><br>
-
-    <button onclick="addItem()">Click Me</button>
+    <select id="colorList" onchange="changeColor()">
+        <option value="">-- Select Color --</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="pink">Pink</option>
+        <option value="orange">Orange</option>
+        <option value="purple">Purple</option>
+    </select>
 
     <script>
-        function addItem() {
-            let li = document.createElement("li");
-            li.innerHTML = "JavaScript";
-            document.getElementById("myList").appendChild(li);
+        function changeColor() {
+            var color = document.getElementById("colorList").value;
+            document.body.style.backgroundColor = color;
         }
     </script>
 
 </body>
 </html>
-```
