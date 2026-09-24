@@ -1,37 +1,4 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>ID CARD</title>
-
-    <style>
-        body {
-            background-color: rgb(7, 185, 244);
-            font-family: Arial, sans-serif;
-        }
-
-        .id-card {
-            width: 400px;
-            margin: 50px auto;
-            padding: 25px;
-            text-align: center;
-            background-color: white;
-            border: 4px solid rgb(220, 3, 3);
-            border-radius: 20px;
-            box-shadow: 0px 5px 15px gray;
-        }
-
-        .id-card h1 {
-            font-size: 24px;
-            margin-bottom: 5px;
-        }
-
-        .id-card h4 {
-            font-size: 18px;
-            margin-top: 5px;
-        }
-
-        .photo {
-            width: 160px<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -112,61 +79,20 @@
             <p style="color:white;">STUDENT ID CARD</p>
         </div>
 
-        <img src=""C:\Users\santh\Downloads\thatchanamoorthy.jpeg"" alt="Student Photo" class="photo">
+        <img src="C:\Users\gokul\OneDrive\Desktop\WD\WhatsApp Image 2026-07-04 at 6.00.00 PM.jpeg" alt="Student Photo" class="photo">
 
-        <h2>Thatchanamoorthy S N</h2>
+        <h2>Gokulakrishna N</h2>
         <p><strong>ECE Student</strong></p>
 
         <div class="details">
-            <p><strong>ID:</strong> 922524106227</p>
+            <p><strong>ID:</strong> 922524106066</p>
             <p><strong>Department:</strong> Electronics & Communication Engineering </p>
             <p><strong>Year:</strong> Pre-Final Year</p>
-            <p><strong>Phone:</strong> 8610688315</p>
+            <p><strong>Phone:</strong> 9360197687</p>
         </div>
 
         <div class="footer">
             <b>Valid Until: 2027</b>
-        </div>
-
-    </div>
-
-</body>
-</html>;
-            height: 190px;
-            object-fit: cover;
-            border: 3px solid rgb(220, 3, 3);
-            border-radius: 20px;
-            margin: 10px;
-        }
-
-        .details {
-            text-align: left;
-            margin-left: 30px;
-        }
-
-        .details h3 {
-            margin: 12px 0;
-        }
-    </style>
-</head>
-
-<body>
-
-    <div class="id-card">
-
-        <h1>V.S.B Engineering College, KARUR</h1>
-
-        <h4>IDENTITY CARD</h4>
-
-        <!-- Student Photo -->
-        <img src="KAVIN.jpeg" class="photo" alt="Kavin Photo">
-
-        <div class="details">
-            <h3>NAME : THATCHANAMOORTHY S </h3>
-            <h3>DEPT : ECE</h3>
-            <h3>BATCH : 2024-2028</h3>
-            <h3>GENDER : MALE</h3>
-            <h3>MOBILE NO : 6382409474</h3>
         </div>
 
     </div>
