@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .navbar {
+            position: fixed;
+            left: 200px;
+            display: flex;
+            width: 1000px;
+            justify-content: space-between;
+            padding: 0px 20px;
+            margin: 20px 30px 15px;
+            border-radius: 30px;
+            background-color: #FD802E;
+            z-index: 3;
+        }
+
+        .navbar:hover {
+            box-shadow: 0 0 40px gray;
+        }
+
+        .navbar h1 {
+            color: #233D4C;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar li {
+            color: #233D4C;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #233D4C;
+        }
+
+        section {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 6em;
+            font-weight: bolder;
+        }
+
+        #home {
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .background-video1 {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .background-video2 {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .background-video3 {
+            position:absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        #about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: aliceblue;
+        }
+        #contact {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="nam">dashbord</h1>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about us</a></li>
+                <li><a href="#contact">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <br>
+        <video autoplay muted loop playsinline class="background-video1">
+            <source src="peash.mp4" type="video/mp4">
+        </video>
+        home
+    </section>
+    <section id="about">
+        <br>
+        <video autoplay muted loop playsinline class="background-video2">
+            <source src="ta.mp4" type="video/mp4">
+        </video>
+        about us
+    </section>
+    <section id="contact">
+        <br>
+        <video autoplay muted loop playsinline class="background-video3">
+            <source src="ultra.mp4" type="video/mp4">
+        </video>
+        contact us
+    </section>
+</body>
+</html>
